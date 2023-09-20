@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Payam Saboonchi</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="header">
+        <p>JS Quiz</p>
+        <p>Total Question: 5</p>
+      </section>
+      <section class="questions" id="questions">
+        <section class="question-box show" id="box1">
+          <div class="question">
+            <p>1.Inside which HTML element do we put the JavaScipt?</p>
+          </div>
+          <div class="answers">
+            <div class="inp">
+              <input type="radio" id="answer1-1" name="question1" value="1" />
+              <label for="answer1-1" class="after-befor">scripting</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer2-1" name="question1" value="2" />
+              <label for="answer2-1" class="after-befor">js</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer3-1" name="question1" value="4" />
+              <label for="answer3-1" class="after-befor">script</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer4-1" name="question1" value="3" />
+              <label for="answer4-1" class="after-befor">javascript</label>
+            </div>
+          </div>
+        </section>
+        <section class="question-box" id="box2">
+          <div class="question">
+            <p>2.How do you write "Hello World" in an alert box?</p>
+          </div>
+          <div class="answers">
+            <div class="inp">
+              <input type="radio" id="answer1-2" name="question2" value="1" />
+              <label for="answer1-2">msgBox("Hello World");</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer2-2" name="question2" value="2" />
+              <label for="answer2-2">alertBox("Hello World");</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer3-2" name="question2" value="4" />
+              <label for="answer3-2">alert("Hello World");</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer4-2" name="question2" value="3" />
+              <label for="answer4-2">msg("Hello World");</label>
+            </div>
+          </div>
+        </section>
+        <section class="question-box" id="box3">
+          <div class="question">
+            <p>3.How to write an IF statement in JavaScript?</p>
+          </div>
+          <div class="answers">
+            <div class="inp">
+              <input type="radio" id="answer1-3" name="question3" value="1" />
+              <label for="answer1-3">if i = 5 then</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer2-3" name="question3" value="4" />
+              <label for="answer2-3">if (i == 5)</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer3-3" name="question3" value="2" />
+              <label for="answer3-3">if i = 5</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer4-3" name="question3" value="3" />
+              <label for="answer4-3">if i == 5 then</label>
+            </div>
+          </div>
+        </section>
+        <section class="question-box" id="box4">
+          <div class="question">
+            <p>
+              4.How to write an IF statement for executing some code if "i" is
+              NOT equal to 5?
+            </p>
+          </div>
+          <div class="answers">
+            <div class="inp">
+              <input type="radio" id="answer1-4" name="question4" value="1" />
+              <label for="answer1-4">if (i <> 5)</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer2-4" name="question4" value="2" />
+              <label for="answer2-4">if i =! 5 then</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer3-4" name="question4" value="4" />
+              <label for="answer3-4">if (i != 5)</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer4-4" name="question4" value="3" />
+              <label for="answer4-4">if i <> 5</label>
+            </div>
+          </div>
+        </section>
+        <section class="question-box" id="box5">
+          <div class="question">
+            <p>5.How does a FOR loop start?</p>
+          </div>
+          <div class="answers">
+            <div class="inp">
+              <input type="radio" id="answer1-5" name="question5" value="1" />
+              <label for="answer1-5">for i = 1 to 5</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer2-5" name="question5" value="2" />
+              <label for="answer2-5">for (i <= 5; i++)</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer3-5" name="question5" value="3" />
+              <label for="answer3-5">for (i = 0; i <= 5)</label>
+            </div>
+            <div class="inp">
+              <input type="radio" id="answer4-5" name="question5" value="4" />
+              <label for="answer4-5">for (i = 0; i <= 5; i++)</label>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="btn">
+        <button class="previose">previose</button>
+        <button class="next">Next</button>
+        <button class="submite">Submite</button>
+      </section>
+      <div class="popup">
+        <p class="close">&#x2715;</p>
+        <div class="score">
+          <p class="score-text">Your score is:</p>
+          <p class="score-num"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

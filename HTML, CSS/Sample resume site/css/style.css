@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "iransans";
+    src: url(../font/IRANSansWeb-FaNum.eot);
+    src: url(../font/IRANSansWeb-FaNum.ttf);
+    src: url(../font/IRANSansWeb-FaNum.woff);
+    src: url(../font/IRANSansWeb-FaNum.woff2);
+}
+:root{
+    --blue-color: #297AC2;
+    --white-color: #ffffff;
+    --gray-color: #808080;
+    --shadow-color: #1f2021;
+    --base-bg: #212428;
+    --bg1: #2e3033;
+    --input-bg: #191b1e;
+}
+body{
+    direction: rtl;
+    font-family: 'iransans';
+}
+.container{
+    width: 100%;
+    background: var(--base-bg);
+}
+.sections{
+    width: 85%;
+    margin: auto;
+}
+.section{
+    padding: 50px 80px;
+}
+.section-title{
+    color: var(--blue-color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+/****************************************/
+.header{
+    width: 100%;
+    background: var(--base-bg);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+}
+.header .logo img{
+    width: 80px;
+    height: 50px;
+}
+.header ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+}
+/**********************************************************/
+.personal-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 40px 80px;
+    height: 550px;
+}
+.personal-info .mypic{
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.personal-info .mypic img{
+    width: 90%;
+    height: 470px;
+    border-radius: 8px;
+}
+.personal-info .text-info{
+    width: 45%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--white-color);
+    margin-right: 20px;
+    padding-right: 70px;
+}
+.personal-info .text-info h1 > span{
+    color: var(--blue-color);
+}
+.personal-info .text-info > p{
+    font-size: 15px;
+    width: 50%;
+}
+.contact > p {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.social_links i{
+    color: var(--white-color);
+    padding: 10px;
+    background: var(--bg1);
+    border-radius: 5px;
+}
+/*******************************************************/
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+.service{
+    background-color: var(--bg1);
+    padding: 15px;
+    color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 350px; */
+    padding-bottom: 30px;
+}
+.service:hover{
+    background: var(--blue-color);
+}
+.service i{
+    color: var(--blue-color);
+    font-size: 25px;
+}
+.service:hover i{
+    color: var(--white-color);
+}
+/*******************************************/
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.skills .skill{
+    color: var(--white-color);
+}
+.skill .progress-bar{
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 10px var(--input-bg);
+}
+.skill .progress-bar .inner-progress{
+    height: 15px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #297ac2 , blue);
+    text-align: center;
+    font-size: 12px;
+
+}
+#front{
+    width: 90%;
+}
+#back{
+    width: 30%;
+}
+#seo{
+    width: 40%;
+}
+#wp{
+    width: 90%;
+}
+/************************************************************/
+.samples{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+}
+.samples .sample{
+    padding: 15px;
+    background: var(--bg1);
+    border-radius: 8px;
+}
+.samples .sample img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+}
+.samples .sample-like{
+    display: flex;
+    justify-content: space-between;
+}
+.samples .sample-like .category{
+ color: var(--blue-color);
+}
+.samples .sample-like > div{
+ color: var(--gray-color);
+}
+.samples .sample .sample-name{
+    font-size: large;
+    color: var(--white-color);
+    padding: 25px 0;
+}
+/********************************************************/
+.contact-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.contact-sec .contact-info{
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-sec .contact-info img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-info > h3{
+    color: var(--white-color);
+    font-size: 25px;
+}
+.contact-info > p{
+    color: var(--gray-color);
+}
+.contact-sec .contact-form{
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    border-radius: 5px;
+    color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 20px;
+}
+.contact-sec .contact-form label{
+    font-size: 12px;
+}
+.contact-sec .contact-form input,
+.contact-sec .contact-form textarea{
+    display: block;
+    background: var(--input-bg);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.contact-form #send{
+    background: var(--gray-color);
+    color: var(--input-bg);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "iransans";
+    font-weight: bold;
+    margin: 15px auto;
+    display: block;
+}
+/*********************************************************/
+.footer{
+    border-top: 1px solid var(--shadow-color);
+    text-align: center;
+}
+.footer > img{
+    width: 150px;
+    margin: 20px 0;
+}
+/**********************************************************/
+@media screen and (max-width:760px) {
+    .logo{
+        display: none;
+    }
+    .personal-info{
+        flex-direction: column;
+        width: 100%;
+    }
+    .personal-info .mypic,
+    .personal-info .text-info{
+        width: 100%;
+    }
+    .personal-info .mypic{
+        margin-top: 300px;
+    }
+    .personal-info .text-info{
+        padding: 0;
+        border: none;
+    }
+    .personal-info .text-info > p{
+        width: 100%;
+    }
+    .sections{
+        width: 100%;
+        padding: 0;
+    }
+    .section{
+        width: 100%;
+        padding: 15px;
+    }
+    .services{
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 15px;
+    }
+    .services-sec{
+        margin-top: 270px;
+    }
+    .samples{
+        grid-template-columns: auto;
+    }
+    .contact-sec{
+        flex-direction: column;
+    }
+    .contact-sec .contact-info,
+    .contact-sec .contact-form{
+        width: 100%;
+    }
+}

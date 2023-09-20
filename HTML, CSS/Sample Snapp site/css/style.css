@@ -1,0 +1,865 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #ffffff;
+  --bgc-color: #f2f5f8;
+  --welcome-color: #21aa58;
+  --btn-color: #00d170;
+  --title-color: #404040;
+  --sub-text-color: #a8a5a5;
+  --nav-color: #3f3f3f;
+  --nav-border-color: #e5e5e5;
+  --subtitle-color: #a3a3a3;
+}
+
+@font-face {
+  font-family: "iransans";
+  src: url(../font/IRANSansWeb-FaNum.eot);
+  src: url(../font/IRANSansWeb-FaNum.ttf);
+  src: url(../font/IRANSansWeb-FaNum.woff);
+  src: url(../font/IRANSansWeb-FaNum.woff2);
+}
+
+body {
+  font-family: "iransans";
+  direction: rtl;
+}
+
+.contianer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--subtitle-color);
+  height: 55px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 15px;
+  background: var(--btn-color);
+}
+
+/********************************************************************************/
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  position: sticky;
+  top: 0;
+  padding: 25px 85px;
+  border-bottom: 1px solid var(--nav-border-color);
+  background: var(--white-color);
+  z-index: 50;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.header i {
+  display: none;
+}
+
+.header ul {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  color: var(--nav-color);
+  font-weight: 100;
+}
+
+.header ul li a {
+  text-decoration: none;
+}
+
+.menu2,
+.apps2 {
+  display: none;
+}
+
+/*********************************************************/
+
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 420px;
+}
+
+.welcome-img {
+  width: 100%;
+}
+
+.welcome .welcome-img > img {
+  height: 420px;
+  width: 100%;
+}
+
+.welcome-info {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 155px;
+  padding-top: 35px;
+  background-color: var(--welcome-color);
+  color: var(--white-color);
+}
+
+.welcome-info .welcome-txt > h1 {
+  font-size: 35px;
+}
+
+.welcome-info .welcome-txt > p {
+  font-size: 20px;
+  margin-top: 25px;
+  padding-left: 40px;
+}
+
+.welcome-input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.welcome-input .input-number {
+  border: none;
+  outline: none;
+  background-color: var(--welcome-color);
+  padding: 10px;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.input-number::placeholder {
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.welcome-input .input-link {
+  width: 25%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: var(--btn-color);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "iransans";
+  background-color: var(--white-color);
+  margin-right: 10px;
+}
+
+.dot-input {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  border-bottom: 1px solid var(--white-color);
+  padding-left: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: var(--white-color);
+}
+
+.welcome-info .welcome-btn {
+  width: 50%;
+  height: 50px;
+  background: none;
+  border: 1px solid var(--white-color);
+  border-radius: 8px;
+  font-family: "iransans";
+  color: var(--white-color);
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.welcome-info .welcome-btn840 {
+  display: none;
+}
+
+/*********************************************************/
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.apps img {
+  width: 160px;
+  height: 45px;
+  margin-top: 35px;
+}
+
+/*********************************************************/
+
+.services-sec {
+  background-color: var(--bgc-color);
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--title-color);
+  padding: 40px 0 40px 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service:nth-child(19),
+:nth-child(20) {
+  transform: translateX(-170px);
+}
+
+.service {
+  width: 315px;
+  height: 90px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service:hover {
+  cursor: pointer;
+}
+
+.service-img img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--nav-color);
+}
+
+.service-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--subtitle-color);
+}
+
+/*********************************************************/
+
+.slider {
+  padding: 80px 0;
+}
+
+.slider-image {
+  width: 100%;
+  text-align: center;
+}
+
+.slider-image > img {
+  width: 80%;
+  border-radius: 8px;
+}
+
+/*********************************************************/
+
+.super-app-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.super-app-image > img {
+  width: 100%;
+}
+
+.super-app-text {
+  margin: 0 50px;
+  width: 75%;
+}
+
+.super-app-text > h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+.super-app-text > p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--title-color);
+  line-height: 24px;
+  text-align: justify;
+}
+
+.super-app-options {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 50px;
+  transform: translateY(-100px);
+}
+
+.super-app-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+}
+
+.option-image {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bgc-color);
+  border-radius: 18px;
+}
+
+.option-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 15px 0;
+}
+
+.option-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+/*********************************************************/
+
+.signup {
+  padding: 40px 0;
+  background-color: var(--bgc-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.signup-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.signup-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.signup-btn > button {
+  width: 170px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  font-family: "iransans";
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.signup-video > video {
+  width: 100%;
+  height: 600px;
+  border-radius: 9px;
+}
+
+.signup-advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  width: 80%;
+  height: 400px;
+}
+
+.signup-advantage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  border-radius: 18px;
+}
+
+.signup-advantage-info {
+  width: 60%;
+}
+
+.signup-advantage-title > p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--title-color);
+  line-height: 40px;
+}
+
+.signup-advantage-text > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+/*********************************************************/
+
+.footer {
+  margin-top: 70px;
+}
+
+.footer ul,
+.e-trust {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.social-media > a {
+  text-decoration: none;
+  color: var(--title-color);
+  padding: 20px 10px;
+  font-size: 25px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#twitter {
+  color: #1da1f2;
+}
+
+#instagram {
+  color: #f604a7;
+}
+
+#youtube {
+  color: red;
+}
+
+#linkedin {
+  color: #0077b5;
+}
+
+#telegram {
+  color: #308eec;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+@media (min-width: 841px) and (max-width: 1100px) {
+  .header {
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu2 {
+    display: none;
+  }
+
+  .header i {
+    display: none;
+  }
+
+  /*********************************************************/
+  .welcome-info {
+    padding: 10px;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: auto;
+  }
+
+  .service-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .service-سعذtitle {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .service:nth-child(19),
+  :nth-child(20) {
+    transform: translateX(-100px);
+  }
+
+  /*****************************************************/
+  .super-app-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .super-app-image img {
+    width: 100%;
+    height: 85px;
+    object-fit: cover;
+  }
+
+  .super-app-options {
+    display: flex;
+    flex-wrap: wrap;
+    transform: unset;
+    margin: 25px 0 65px 0;
+  }
+
+  /*****************************************************/
+  .signup-advantages {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+    margin: unset;
+    height: unset;
+    width: 90%;
+  }
+
+  .signup-advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: unset;
+    width: 100%;
+    height: unset;
+  }
+
+  .signup-advantage-info {
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+/*********************************************************/
+/*********************************************************/
+
+@media screen and (max-width: 840px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /*****************************************************/
+  .header {
+    padding: 25px;
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu2 {
+    display: none;
+    position: fixed;
+    top: 77px;
+    background-color: white;
+    height: auto;
+    width: 70%;
+  }
+
+  .menu2 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 1100;
+  }
+
+  .menu2 ul > a {
+    text-decoration: none;
+  }
+
+  #cross {
+    font-size: 25px;
+    display: none;
+    align-items: start;
+  }
+
+  .header #ham {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+  }
+
+  #download-apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 25px;
+    padding-top: 15px;
+    border-top: 1px solid var(--nav-border-color);
+  }
+
+  #appsbtn {
+    border: none;
+    font-family: "iransans";
+    background-color: var(--white-color);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--btn-color);
+  }
+
+  #apps-image {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .apps-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  #apps-links-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--nav-color);
+  }
+
+  #ham,
+  #appsbtn,
+  #apps-links,
+  #down-angle,
+  #up-angle,
+  #cross:hover {
+    cursor: pointer;
+  }
+
+  #up-angle {
+    display: none;
+  }
+
+  #down-angle,
+  #up-angle {
+    color: var(--btn-color);
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /*****************************************************/
+  .welcome {
+    width: 100%;
+    height: unset;
+    grid-template-columns: unset;
+  }
+
+  .welcome-img {
+    display: none;
+  }
+
+  .welcome-info {
+    width: 100%;
+    height: auto;
+    margin: unset;
+    padding: 15px;
+  }
+
+  .welcome-input {
+    display: none;
+  }
+
+  .welcome-info .welcome-txt h1 {
+    font-size: 25px;
+  }
+
+  .welcome-info .welcome-txt p {
+    padding-left: 0;
+  }
+
+  .welcome-info .welcome-btn {
+    display: none;
+  }
+
+  .welcome-info .welcome-btn840 {
+    display: unset;
+    margin: 25px 0;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--white-color);
+    border-radius: 8px;
+    font-family: "iransans";
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /*****************************************************/
+  .apps {
+    display: none;
+  }
+
+  /*****************************************************/
+  .services-sec {
+    margin-top: 0;
+  }
+
+  .services-sec .section-title {
+    font-size: 20px;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+  }
+
+  .service .service-img {
+    margin-top: 10px;
+  }
+
+  .service .service-title {
+    font-size: 14px;
+  }
+
+  .service .service-subtitle {
+    display: none;
+  }
+
+  .service:nth-child(19),
+  :nth-child(20) {
+    transform: translateX(-120px);
+  }
+
+  /*****************************************************/
+  .slider {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .slider-image img {
+    width: 100%;
+  }
+
+  /*****************************************************/
+  .super-app-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .super-app-image img {
+    width: 100%;
+    height: 85px;
+    object-fit: cover;
+  }
+
+  .super-app-options {
+    display: flex;
+    flex-wrap: wrap;
+    transform: unset;
+  }
+
+  /*****************************************************/
+  .signup-title {
+    text-align: center;
+  }
+
+  .signup-advantages {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+    margin: unset;
+    height: unset;
+    width: 90%;
+  }
+
+  .signup-advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: unset;
+    width: 100%;
+    height: unset;
+  }
+
+  .signup-advantage-info {
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+/*********************************************************/

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*********************************************************/
+#pic1,
+#pic2 {
+    text-align: center;
+}
+
+#main,
+#hov {
+    width: 512px;
+    height: 220px;
+    border-radius: 15px;
+    margin-top: 200px;
+}
+
+#hov {
+    display: none;
+}

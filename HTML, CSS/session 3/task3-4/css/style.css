@@ -1,0 +1,34 @@
+body{
+    background-color: #20273a;
+}
+#div1{
+    width: 400px;
+    font-size: x-large;
+    margin: auto;
+    color: #ff4b7b;
+}
+table{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+table th{
+    color: #006ace;
+    text-align: left;
+}
+
+table th, td{
+    padding: 15px;
+}
+td{
+    color: white;
+}
+table tbody tr:nth-child(odd){
+    background-color: #313c4f;
+}
+table tbody tr:nth-child(even){
+    background-color: #041636;
+}
+table tbody td:first-child{
+    color: #ff4b7b;
+}

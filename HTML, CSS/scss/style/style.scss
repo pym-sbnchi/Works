@@ -1,0 +1,289 @@
+$color-red: #fb1004;
+$color-green: #0caa7d;
+$color-black: #000;
+$color-white: #fff;
+$color-blue: #0878a0;
+$color-shadow: #dedede;
+$color-darkMode: #121212;
+
+@mixin main-font {
+  font-family: "Poppins", sans-serif;
+}
+@mixin button {
+  outline: none;
+  border: none;
+  background-color: $color-red;
+  color: $color-white;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px;
+  @include main-font;
+}
+@mixin flex($fd, $jc, $ai, $gap) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+$isChecked: true;
+
+/************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include main-font();
+}
+
+/************************************************/
+
+.welcome {
+  background-image: url(../image/make\ design\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  img {
+    width: 50px;
+  }
+}
+.arrow {
+  gap: 15px;
+}
+
+/************************************************/
+
+.toggle-btn {
+  gap: 15px;
+  margin-right: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  z-index: 1000;
+}
+
+.switch {
+  .input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  &:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+}
+
+.input {
+  @if $isChecked {
+    &:checked + .slider {
+      background-color: #2196f3;
+    }
+    &:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  }
+}
+.input {
+  @if $isChecked {
+    &:checked + .slider {
+      box-shadow: 0 0 1px #2196f3;
+    }
+  }
+}
+
+.darkstyle {
+  background-color: $color-darkMode;
+  color: $color-white;
+}
+
+/************************************************/
+
+.right,
+.left {
+  background-color: $color-green;
+  border-radius: 8px;
+  :hover {
+    background-color: $color-red;
+    color: $color-white;
+    border-radius: 8px;
+  }
+}
+.right {
+  margin-left: 25px;
+}
+.left {
+  margin-right: 25px;
+}
+
+.banner-text {
+  margin: 25px 0;
+  gap: 25px;
+  h1 {
+    font-size: 65px;
+  }
+  button {
+    @include button;
+  }
+}
+
+/************************************************/
+
+.make-image {
+  transform: translate(-50px, -90px);
+  padding-left: 25px;
+  img {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/************************************************/
+
+.nav-menu {
+  @include flex(row, space-between, center, none);
+  padding: 15px;
+  background-color: $color-green;
+  color: $color-white;
+  .menu {
+    margin-left: 90px;
+    ul {
+      @include flex(row, center, center, 45px);
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+      }
+    }
+  }
+  .search-bar {
+    @include flex(row, center, center, 15px);
+    margin-right: 90px;
+  }
+  p {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+}
+/************************************************/
+
+.about {
+  @include flex(row, center, center, 10px);
+  .about-image {
+    height: 90vh;
+    width: 100vw;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .about-text {
+    padding: 0 55px;
+    width: 100%;
+    h2 {
+      font-weight: 700;
+    }
+    p {
+      padding: 35px 0;
+    }
+    button {
+      @include button;
+    }
+  }
+}
+
+/************************************************/
+
+.doing {
+  margin: 100px 0;
+  h2 {
+    font-weight: 700;
+  }
+  .elements {
+    @include flex(row, center, center, 25px);
+    div:nth-child(odd) {
+      background-color: $color-red;
+    }
+    div:nth-child(even) {
+      background-color: $color-green;
+    }
+    div {
+      @include flex(column, center, center, 15px);
+      border-radius: 8px;
+      margin-top: 25px;
+      padding-top: 25px;
+      width: 250px;
+      text-align: center;
+      height: 250px;
+      color: $color-white;
+    }
+  }
+}
+
+/************************************************/
+
+.skills {
+  padding: 50px 0;
+  background-image: url(../image/skill-bg.jpg);
+  color: $color-white;
+  height: 70vh;
+  .container {
+    h2 {
+      font-weight: 700;
+    }
+    .circles {
+      @include flex(row, center, center, 100px);
+      div {
+        @include flex(column, center, center, 15px);
+        .circle {
+          margin-top: 80px;
+          .progress_text {
+            font-size: 25px !important;
+            font-weight: bold;
+          }
+        }
+        h6 {
+          font-size: 17px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

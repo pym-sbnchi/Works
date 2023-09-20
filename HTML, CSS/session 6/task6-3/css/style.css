@@ -1,0 +1,67 @@
+.main-div{
+    border-radius: 10px;
+    background-color: #01395a;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    font-family: cursive;
+
+}
+.right{
+    float: right;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    gap: 10px;
+    height: 580px;
+    margin: 10px;
+    color: white;
+}
+.slide{
+    background-color: #1380c4;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border-radius: 10px;
+}
+.l-image{
+    background-color: #1380c4;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.r-image{
+    background-color: #1380c4;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.text{
+    background-color: #1380c4;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.left{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.left-box{
+    border-radius: 10px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #a3dfff;
+    padding: 5px;
+    padding-top: 30px;
+    margin: 5px;
+    position: absolute;
+    top: 200px;
+    width: 165px;
+}
+.box{
+    border-radius: 10px;
+    background-color: #fa5353;
+}

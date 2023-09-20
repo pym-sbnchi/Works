@@ -1,0 +1,83 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.divmain{
+border: 3px solid black;
+padding: 30px;
+margin:10px 250px 10px 250px;
+text-align: center;
+}
+#div1{
+width: 50px;
+height: 50px;
+border: 4px dashed rgb(250, 90, 178);
+border-radius: 50%;
+background-color: purple;
+margin: auto;
+}
+#p1{
+color: white;
+font-size: 30px;
+}
+#div2{
+border-left: 9px solid blue;
+background-color: rgb(132, 132, 187);
+width: 250px;
+height: 50px;
+margin: auto;
+}
+#p2{
+font-size: xx-large;
+color: white;
+}
+#div3{
+border: 4px dashed white;
+border-bottom: 4px dashed green;
+border-radius: 20px;
+background-color: lightgreen;
+width: 450px;
+margin: auto;
+}
+#p3{
+font-size: 40px;
+color: white;
+}
+#div4{
+border: 9px double red;
+border-radius: 15px 0px;
+background-color: yellow;
+width: 550px;
+margin: auto;
+}
+#p4{
+font-size: x-large;
+font-weight: bold;
+}
+#div5{
+background-color: rgb(255, 136, 0);
+width: 600px;
+margin: auto;
+height: 40px;
+border-left: 8px solid brown;
+border-right: 8px solid brown;
+border-bottom: 8px dashed brown;
+border-top: 8px dotted brown
+;
+}
+#p5{
+font-size: x-large;
+color: white;
+}
+#div6{
+background-color: red;
+width: 650px;
+margin: auto;
+height: 40px;
+border: 8px ridge orange;
+}
+#p6{
+font-size: 20px;
+color: white;
+}

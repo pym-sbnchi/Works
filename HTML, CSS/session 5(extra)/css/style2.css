@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../image/programming-background-collage_23-2149901782.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.h1{
+    color: blue;
+}
+.input{
+    width: 350px;
+    height: 30px;
+    margin: 6px;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 238, 144 ,0.7);
+}
+::placeholder{
+    color: blue;
+    padding: 5px;
+}
+.country{
+    width: 20% ;
+    height: 32px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: lightgray;
+}
+.number{
+    width: 80% ;
+    height: 30px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.gender{
+    width: 350px;
+    border: 1px solid rgb(104, 104, 104);
+    background-color: white;
+    height: 30px;
+    margin: 6px;
+    line-height: 30px;
+}
+.p2{
+    text-align: start;
+    width: 350px;
+}
+.id1{
+    width: 50px;
+    height: 30px;
+}
+.id2{
+    width: 250px;
+    height: 30px;
+}
+.id3{
+    width: 25px;
+    height: 30px;
+}
+#file{
+    padding-left: 5px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    width: 355px;
+    padding-top: 5px;
+}

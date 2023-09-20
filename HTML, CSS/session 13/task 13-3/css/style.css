@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 290px;
+    gap: 50px;
+    background-color: black;
+}
+
+#plus,
+#minus,
+#num {
+    color: white;    
+    font-size: 35px;
+}
+
+#plus,
+#minus {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+#plus{
+    background-color: green;
+}
+#minus{
+    background-color: red;
+}

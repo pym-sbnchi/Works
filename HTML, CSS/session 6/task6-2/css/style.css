@@ -1,0 +1,48 @@
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 620px;
+    width: 100%;
+    gap : 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.right-div{
+display: grid;
+grid-template-rows: 200px 300px 100px;
+gap: 10px;
+}
+.nav{
+    background-color: red;
+    height: 620px;
+}
+.head{
+    background-color: red;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.card1-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+.card1-2 > div{
+    background-color: red;
+}
+
+.card3-4{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+.card3-4 > div{
+    background-color: red;
+}
+.foot{
+
+    background-color: red;
+}

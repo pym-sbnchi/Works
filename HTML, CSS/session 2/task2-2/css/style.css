@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(153, 206, 206);
+    color: blue;
+}
+#h1{
+    text-align: center;
+}
+#ol1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.p1{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    line-height: 5px;
+}

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1{
+    background-color: #f8b2b2;
+    border-top: 4px double #ff5b5b;
+    border-bottom: 4px double #ff5b5b;
+    height: 50px;
+    padding-left: 30px;
+    color: rgb(177, 0, 0);
+}
+
+.span1{
+    color: red;
+}
+.div1{
+    border: 2px solid blue;
+    width: 450px;
+    background-color: rgb(188, 188, 236);
+    padding-left: 25px;
+    margin: 20px;
+}
+
+.p1{
+color: blue;
+font-weight: bold;
+font-size: larger;
+margin: 20px 0 0 10px;
+}
+.span2{
+font-style: italic;
+}
+.li1{
+    color: red;
+}
+.ul1{
+margin: 10px 0 20px 50px;
+}
+#h-mar{
+    margin: 20px 0 20px 0;
+}
