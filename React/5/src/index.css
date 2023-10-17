@@ -1,0 +1,56 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pro {
+  width: 500px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+.card-div {
+  text-align: center;
+}
+.text{
+  background-color: #fcf3da;
+  padding: 15px;
+}
+.buy {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px;
+}
+.show-card {
+  margin: 50px;
+}
+.kh {
+  width: 250px;
+  aspect-ratio: 150/150;
+  object-fit: contain;
+}
+.jk {
+  position: absolute;
+  top: 50%;
+}
+.jkk {
+  position: absolute;
+  top: 150%;
+}
+.rig {
+  right: 0%;
+}
+.lef {
+  left: 0%;
+}
+.as {
+  transition: all 2s;
+}
+#cta {
+  background-color: cadetblue;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+}
