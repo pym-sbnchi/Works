@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1 {
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+.card {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px #888888;
+}
+.image {
+  width: 320px;
+  height: 210px;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+}
+.text span {
+  font-weight: bold;
+}
+.search-input{
+  margin-left: 500px;
+  width: 250px;
+}
